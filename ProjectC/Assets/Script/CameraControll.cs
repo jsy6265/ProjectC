@@ -37,6 +37,7 @@ namespace ProjectC
 
             if(distance != 0)
             {
+                mainCamera.fieldOfView = Mathf.Clamp(mainCamera.fieldOfView, 8, 53);
                 mainCamera.fieldOfView += distance;
             }
         }
